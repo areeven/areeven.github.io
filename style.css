@@ -5,8 +5,8 @@ body {
 }
 
 #container {
-    grid-template-columns: 6fr;
-    grid-template-rows: 4fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "nav nav nav nav nav nav nav"
     "main content content1 content1 content sidebar"
