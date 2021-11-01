@@ -1,0 +1,21 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 6fr;
+    grid-template-rows: 4fr;
+    grid-template-areas:
+    "nav nav nav nav nav nav nav"
+    "main content content1 content1 content sidebar"
+    "main content content1 content1 content sidebar"
+    "footer footer footer footer footer footer"
+;
+}
+
+
+
+
+
