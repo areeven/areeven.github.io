@@ -1,7 +1,6 @@
 body {
     background-color: #333;
     color: white;
-    display: grid;
 }
 
 #container {
@@ -9,8 +8,8 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "nav nav nav nav nav nav nav"
-    "main content content1 content1 content sidebar"
-    "main content content1 content1 content sidebar"
+    "main content content1 content1 content2 sidebar"
+    "main content content1 content1 content2 sidebar"
     "footer footer footer footer footer footer"
 ;
     height: 100vh;
@@ -30,6 +29,10 @@ main {
 
 .content1 {
     grid-area: content1;
+}
+
+.content2 {
+    grid-area: content2;
 }
 
 .sidebar {
