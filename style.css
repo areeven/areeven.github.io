@@ -4,43 +4,55 @@ body {
 }
 
 #container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 0.4fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "nav nav nav nav nav nav nav"
-    "main content content1 content1 content2 sidebar"
-    "main content content1 content1 content2 sidebar"
-    "footer footer footer footer footer footer"
-;
     height: 100vh;
 }
 
 nav {
-    grid-area: nav;
+    grid-column: 1/7;
+
+}
+
+li {
+    display: inline-block;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 main {
-    grid-area: main;
+    grid-column: 1/2;
+    grid-row: 2/4;
 }
 
 .content {
-    grid-area: content;
+    grid-column: 2/3;
+    grid-row: 2/4;
 }
 
 .content1 {
-    grid-area: content1;
+    grid-column: 3/5;
+    grid-row: 2/4;
 }
 
 .content2 {
-    grid-area: content2;
+    grid-column: 5/6;
+    grid-row: 2/4;
 }
 
 .sidebar {
-    grid-area: sidebar;
+    grid-column: 6/7;
+    grid-row: 2/4;
 }
 
 footer {
-    grid-area: footer;
+    grid-column: 1/7;
+    grid-row: 4/5;
 }
 
 
