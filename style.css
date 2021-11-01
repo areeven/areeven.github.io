@@ -1,11 +1,10 @@
 body {
     background-color: #333;
     color: white;
-
+    display: grid;
 }
 
 #container {
-    display: grid;
     grid-template-columns: 6fr;
     grid-template-rows: 4fr;
     grid-template-areas:
